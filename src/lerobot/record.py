@@ -378,7 +378,8 @@ def record(cfg: RecordConfig) -> LeRobotDataset:
             recorded_episodes += 1
 
     log_say("Stop recording", cfg.play_sounds, blocking=True)
-
+    # avoids abrupt disconnection (the arm disconnects too quickly and falls down). This gives time to safely catch it.
+    time.sleep(5)
     robot.disconnect()
     if teleop is not None:
         teleop.disconnect()
