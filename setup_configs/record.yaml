@@ -30,10 +30,10 @@ teleop:
 display_data: true
 
 dataset:
-  num_episodes: 20
+  num_episodes: 5
+  video_encoding_batch_size: 5
   single_task: "Insert wire tip upward through black square from below"
   episode_time_s: 40
-  video_encoding_batch_size: 10
   repo_id: eliasab16/insert_wire_prompt_1
 
 resume: true
