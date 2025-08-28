@@ -1,3 +1,5 @@
+# python -m lerobot.record --config_path=./setup_configs/record.yaml
+
 robot:
   type: so101_follower
   port: /dev/tty.usbmodem5A680122821
