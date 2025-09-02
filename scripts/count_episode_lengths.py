@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# usage: python count_episode_lengths.py <path_to_episodes.jsonl>
 import json
 import sys
 

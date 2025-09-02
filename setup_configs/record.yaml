@@ -5,19 +5,19 @@ robot:
   port: /dev/tty.usbmodem5A680122821
   id: right_follower
   cameras:
-    bottom_cam:
+    top_cam:
       type: opencv
       index_or_path: 0
       width: 800
       height: 600
       fps: 30
-    side_cam:
+    wrist_bottom_cam:
       type: opencv
       index_or_path: 1
       width: 800
       height: 600
       fps: 30
-    top_cam:
+    wrist_top_cam:
       type: opencv
       index_or_path: 2
       width: 800
@@ -32,10 +32,10 @@ teleop:
 display_data: true
 
 dataset:
-  num_episodes: 5
-  video_encoding_batch_size: 5
-  single_task: "Insert wire tip upward through black square from below"
+  num_episodes: 10
+  video_encoding_batch_size: 10
+  single_task: "Grab the red wire"
   episode_time_s: 40
-  repo_id: eliasab16/insert_wire_prompt_1
+  repo_id: eliasab16/grab_and_insert_1
 
 resume: true
