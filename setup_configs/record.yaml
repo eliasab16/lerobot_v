@@ -32,10 +32,10 @@ teleop:
 display_data: true
 
 dataset:
-  num_episodes: 10
-  video_encoding_batch_size: 10
-  single_task: "Grab the red wire"
-  episode_time_s: 40
-  repo_id: eliasab16/grab_and_insert_1
+  num_episodes: 5
+  video_encoding_batch_size: 5
+  single_task: "Grab the red wire then insert upward through center of hanging black square"
+  episode_time_s: 60
+  repo_id: eliasab16/grab_and_insert_2
 
 resume: true
