@@ -20,6 +20,7 @@ def count_episode_lengths(file_path):
     print(f"Episodes in  {file_path}:\n")
     print(f"Total length: {total_length}\n")
     print(f"Total episodes: {episode_count}\n")
+    print(f"Total videos (episodes x 3 cameras): {episode_count * 3}\n")
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
