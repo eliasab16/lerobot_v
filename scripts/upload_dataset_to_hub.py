@@ -2,7 +2,7 @@
 
 """
 Script to upload a cached lerobot dataset to Hugging Face Hub.
-Usage: python upload_dataset_to_hub.py --dataset_path=<dataset_path> --repo_id=<repo_id>
+Usage: python scripts/upload_dataset_to_hub.py --dataset_path=/Users/elisd/.cache/huggingface/lerobot/eliasab16/<dataset_name> --repo_id=<repo_id>
 """
 
 import argparse
