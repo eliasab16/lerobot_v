@@ -5,21 +5,27 @@ robot:
   port: /dev/tty.usbmodem5A680122821
   id: right_follower
   cameras:
-    wrist_bottom_cam:
+    write_top:
       type: opencv
       index_or_path: 0
       width: 800
       height: 600
       fps: 30
-    wrist_top_cam:
+    overview_top:
       type: opencv
       index_or_path: 1
       width: 800
       height: 600
       fps: 30
-    top_cam:
+    overview_bottom:
       type: opencv
       index_or_path: 2
+      width: 800
+      height: 600
+      fps: 30
+    write_bottom:
+      type: opencv
+      index_or_path: 3
       width: 800
       height: 600
       fps: 30
