@@ -1,11 +1,11 @@
-# python -m lerobot.teleoperate --config_path=./setup_configs/teleop.yaml
+# lerobot-teleoperate --config_path=./setup_configs/teleop.yaml
 
 robot:
   type: so101_follower
   port: /dev/tty.usbmodem5A680122821
   id: right_follower
   cameras:
-    write_top:
+    wrist_top:
       type: opencv
       index_or_path: 0
       width: 800
@@ -23,7 +23,7 @@ robot:
       width: 800
       height: 600
       fps: 30
-    write_bottom:
+    wrist_bottom:
       type: opencv
       index_or_path: 3
       width: 800

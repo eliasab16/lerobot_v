@@ -1,25 +1,31 @@
-# python -m lerobot.record --config_path=./setup_configs/record.yaml
+# lerobot-record --config_path=./setup_configs/record.yaml
 
 robot:
   type: so101_follower
   port: /dev/tty.usbmodem5A680122821
   id: right_follower
   cameras:
-    wrist_bottom_cam:
+    wrist_top:
       type: opencv
       index_or_path: 0
       width: 800
       height: 600
       fps: 30
-    wrist_top_cam:
+    overview_top:
       type: opencv
       index_or_path: 1
       width: 800
       height: 600
       fps: 30
-    top_cam:
+    overview_bottom:
       type: opencv
       index_or_path: 2
+      width: 800
+      height: 600
+      fps: 30
+    wrist_bottom:
+      type: opencv
+      index_or_path: 3
       width: 800
       height: 600
       fps: 30
@@ -32,10 +38,10 @@ teleop:
 display_data: true
 
 dataset:
-  num_episodes: 4
-  video_encoding_batch_size: 4
-  single_task: "Open gripper to release wire then return home"
+  num_episodes: 5
+  video_encoding_batch_size: 5
+  single_task: "Insert tip into mounted white device from below"
   episode_time_s: 60
-  repo_id: eliasab16/grab_and_insert_and_drop_part1
+  repo_id: eliasab16/xvlm_insert_tip_into_mounted_device
 
-resume: true
+resume: false
